@@ -1,0 +1,33 @@
+/* Variables initialization */
+:root{
+    --main-text-color : #FF6060;
+    --light-grey-color : #F6F6F6;
+    --grey-color : #C4C4C4;
+    --white-color : #FFFFFF;
+    --black-color : #000000;
+}
+
+/* Hide element */
+.hide{
+    display: none;
+}
+
+/* Display element as flex */
+.flex{
+    display: flex;
+}
+
+/* Set flex direction to row */
+.flex--row{
+    flex-direction: row;
+}
+
+/* Set flex direction to column */
+.flex--column{
+    flex-direction: column;
+}
+
+/* Allow flex wrap */
+.flex--wrap{
+    flex-wrap: wrap;
+}

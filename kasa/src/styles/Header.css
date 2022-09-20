@@ -1,0 +1,40 @@
+/* Header containing Logo and Nav menu */
+header{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Nav menu in the header */
+nav{
+    color: var(--main-text-color);
+    width: 25%;
+    font-size: 24px;
+    line-height: 142.6%;
+}
+
+/* List used as the nav menu */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Element of the menu list */
+li{
+    height: fit-content;
+}
+
+/* Menu links style */
+a.navLink{
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+/* Interaction style with menu links */
+a.navLink:active, a.navLink:hover{
+    text-decoration: underline;
+}

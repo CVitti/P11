@@ -1,0 +1,28 @@
+/* Footer main styles */
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    font-size: 24px;
+    line-height: 142.6%;
+    row-gap: 30px;
+}
+
+/* Footer text style */
+footer p{
+    margin: 0;
+}
+
+/* Change the color from the footer logo */
+footer svg path{
+    fill: var(--white-color);
+}
+
+/* Change SVG logo size */
+footer svg{
+    height: 40px;
+    width: 120px;
+}

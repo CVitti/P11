@@ -1,0 +1,25 @@
+/* Main section that contains error messages */
+.mainError{
+    text-align: center;
+}
+
+/* Error text style */
+.mainError p{
+    font-size: 36px;
+    margin: 0;
+    color: var(--main-text-color);
+}
+
+/* Higher font size for the error number */
+p.nbError{
+    font-size: 288px;
+    font-weight: 700;
+}
+
+/* Link redirecting to the index below the error message */
+a.indexLink{
+    display: block;
+    color: var(--main-text-color);
+    text-decoration: underline;
+    margin: 140px 0px;
+}
