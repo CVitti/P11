@@ -1,14 +1,15 @@
 // @ts-nocheck
 
 // CSS and files import
-import '../styles/MainIndex.css';
+import '../styles/MainPage.css';
+import bannerFile from "../assets/MainBanner.png";
 
 // React components import
 import { useEffect, useState } from 'react';
 
 // Custom components import
-import LocationCard from './LocationCard';
-import Banner from './Banner';
+import LocationCard from '../components/LocationCard';
+import Banner from '../components/Banner';
 
 /**
  * 
@@ -24,15 +25,15 @@ async function getLocations() {
  * 
  * @returns Code for the MainIndex component (Main section with Location Cards)
  */
-function MainIndex() {
+function MainPage() {
   const [locationsList, setLocationsList] = useState([]);
   useEffect(() => {
     getLocations().then(data => setLocationsList(data));
   }, [locationsList])
   return (
     <main>
-      <Banner />
-      <section className="flex mainSection flex flex--row flex--wrap">
+      <Banner bannerPicture={bannerFile} slogan="Chez vous, partout et ailleurs"/>
+      <section className="flex mainSection flex--row flex--wrap">
       {locationsList.map((location) => (
         <LocationCard locationData={location} key={location.id} />
       ))}
@@ -40,4 +41,4 @@ function MainIndex() {
     </main>    
   );     
 }
-export default MainIndex;
+export default MainPage;

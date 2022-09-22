@@ -3,8 +3,8 @@
 // CSS import
 import '../styles/ErrorPage.css';
 
-// Variable initialization
-const fakeLink = "#";
+// React/React-router components import
+import { Link } from 'react-router-dom';
 
 /**
  * 
@@ -15,7 +15,7 @@ function ErrorPage() {
         <main className="mainError">
             <p className='nbError'>404</p>
             <p>Oups! La page que vous demandez n'existe pas</p>
-            <a href={fakeLink} className="indexLink">Retourner sur la page d'accueil</a>          
+            <Link to="/" className="indexLink">Retourner sur la page d'accueil</Link>      
         </main>
     );
 }

@@ -1,19 +1,19 @@
 // @ts-nocheck
 
-// CSS and files import
-import bannerFile from "../assets/Banner.png";
+// CSS import
 import '../styles/Banner.css';
 
 /**
  * 
  * @returns Code for the Banner component (Background image, gradient and slogan)
  */
-function Banner() {
+function Banner({bannerPicture, slogan}) {
     return (
       <section className="flex mainBanner">
-        <img src={bannerFile} alt="Paysage en arrière plan" className="flex"></img>
+        <img src={bannerPicture} alt="Paysage en arrière plan" className="flex"></img>
         <div className="bannerSloganBackground flex"></div>
-        <div className="bannerSlogan flex">Chez vous, partout et ailleurs</div>
+        {/* Add a slogan if defined in props when calling component */}
+        {slogan && <div className="bannerSlogan flex">{slogan}</div>}
       </section>
     );
 }

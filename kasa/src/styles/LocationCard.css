@@ -4,6 +4,12 @@
     height: 340px;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
+}
+
+/* Location Card style when hovering */
+.locationCard:hover{
+    box-shadow: 0px 3px 10px -1px var(--black-color);
 }
 
 /* Location Card image */

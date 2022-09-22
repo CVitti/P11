@@ -1,0 +1,50 @@
+/* Global expandable block containing the title, the arrow icon and the content below */
+.expandableBlock{
+    width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+/* Header of the expandable block, containing the title and the arrow icon */
+.expandableBlockHeader{
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-text-color);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: var(--white-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Arrow icon of the expandable block*/
+.expandableBlockHeader svg{
+    height: 48px;
+    width: 28px;    
+    pointer-events: none;
+}
+
+/* Arrow icon of the expandable block*/
+.expandableBlockHeader svg path{
+    fill: var(--white-color);
+}
+
+/* Content of the expandable block, hidden on load and displayed on click */
+.expandedContent{
+    background-color: var(--light-grey-color);
+    color: var(--main-text-color);
+    padding: 0px 20px;
+    font-weight: 400;
+    width: 100%;
+    height: fit-content;
+}
+
+/* Styling content list of the expandable block*/
+.detailsList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

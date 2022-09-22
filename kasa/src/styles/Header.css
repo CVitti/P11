@@ -8,24 +8,11 @@ header{
 /* Nav menu in the header */
 nav{
     color: var(--main-text-color);
-    width: 25%;
+    width: 20%;
     font-size: 24px;
     line-height: 142.6%;
-}
-
-/* List used as the nav menu */
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-/* Element of the menu list */
-li{
-    height: fit-content;
 }
 
 /* Menu links style */
@@ -35,6 +22,7 @@ a.navLink{
 }
 
 /* Interaction style with menu links */
-a.navLink:active, a.navLink:hover{
+a.navLinkActive{
+    color: var(--main-text-color);
     text-decoration: underline;
 }

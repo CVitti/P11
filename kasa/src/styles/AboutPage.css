@@ -1,0 +1,5 @@
+/* Main section of the About Page */
+.aboutSection{
+    margin: 30px 0px 100px 0px;
+    row-gap: 30px;
+}
