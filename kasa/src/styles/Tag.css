@@ -1,0 +1,10 @@
+/* Tag block used on detail page */
+.tag{
+    background-color: var(--main-text-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 20px;
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 142.6%;
+}

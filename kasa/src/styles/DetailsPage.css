@@ -1,0 +1,87 @@
+/* Section all the whole details page, between header and footer */
+.detailsSection{
+    margin: 20px 0px;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+/* Block containing Title + location + tags */
+.detailsContainer{
+    width: 80%;
+    row-gap: 10px;
+}
+
+/* Title of the Logement */
+.logementTitle{
+    font-size: 36px;
+    line-height: 142.6%;
+    color: var(--main-text-color);
+    margin: 0;
+}
+
+/* Text for the Logement location*/
+.logementLocation{
+    margin: 0;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: var(--main-text-color);
+}
+
+/* Block containing the Logement tags */
+.tagsContainer{
+    column-gap: 10px;
+}
+
+/* Block containint host name and picture, Logement rating */
+.hostAndRatingContainer{
+    width: 20%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+/* Block containing the host name and his profile picture */
+.hostContainer{
+    text-align: right;
+    color: var(--main-text-color);
+    font-size: 18px;
+    line-height: 142.6%;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+}
+
+/* Host name text */
+.hostContainer p{
+    margin: 0;
+}
+
+/* Host profile picture */
+.hostPicture{
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+
+/* Containing all rating stars */
+.ratingContainer{
+    width: 100%;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+/* Current rating stars */
+.filledStar{
+    color: var(--main-text-color);
+}
+
+/* Missing rating stars */
+.emptyStar{
+    color: var(--grey-color);
+}
+
+/* Block containing equipment's block and description's block */
+.expandableBlocksContainer{
+    width: 100%;
+    justify-content: space-between;
+}

@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 import ErrorPage from './ErrorPage';
 import MainPage from './MainPage';
 import AboutPage from './AboutPage';
-import LocationPage from './LocationPage';
+import DetailsPage from './DetailsPage';
 
 /**
  * 
@@ -34,8 +34,8 @@ function App() {
           {/* About Route */}
           <Route path="/About" element={<React.Fragment> <Header /><AboutPage /> </React.Fragment>}/>
 
-          {/* Location Details Page Route */}
-          <Route path="/Location/:currentId" element={<React.Fragment> <Header /><LocationPage /> </React.Fragment>}/>
+          {/* Logement Details Page Route */}
+          <Route path="/DetailsLogements/:currentId" element={<React.Fragment> <Header /><DetailsPage /> </React.Fragment>}/>
 
           {/* Error 404 Route, used if no matching routes before, must be last route */}
           <Route path="*" element={<React.Fragment> <Header /><ErrorPage /> </React.Fragment>}/> 

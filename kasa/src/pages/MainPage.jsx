@@ -8,34 +8,36 @@ import bannerFile from "../assets/MainBanner.png";
 import { useEffect, useState } from 'react';
 
 // Custom components import
-import LocationCard from '../components/LocationCard';
+import LogementCard from '../components/LogementCard';
 import Banner from '../components/Banner';
 
 /**
  * 
- * @returns all Locations data as an array from JSON file
- */
-async function getLocations() {
-  const response = await fetch("/data/logements.json")
-  const data = await response.json();        
-  return data;
-}
-
-/**
- * 
- * @returns Code for the MainIndex component (Main section with Location Cards)
+ * @returns Code for the MainIndex component (Main section with Logement Cards)
  */
 function MainPage() {
-  const [locationsList, setLocationsList] = useState([]);
+  // Use state for logementsList
+  const [logementsList, setLogementsList] = useState([]);
   useEffect(() => {
-    getLocations().then(data => setLocationsList(data));
-  }, [locationsList])
+    getLogements().then(data => setLogementsList(data));
+  }, [logementsList])
+
+  /**
+   * 
+   * @returns all Logements data as an array from JSON file
+   */
+  async function getLogements() {
+    const response = await fetch("/data/logements.json")
+    const data = await response.json();        
+    return data;
+  }  
+
   return (
     <main>
       <Banner bannerPicture={bannerFile} slogan="Chez vous, partout et ailleurs"/>
       <section className="flex mainSection flex--row flex--wrap">
-      {locationsList.map((location) => (
-        <LocationCard locationData={location} key={location.id} />
+      {logementsList.map((logement) => (
+        <LogementCard logementData={logement} key={logement.id} />
       ))}
     </section>
     </main>    
