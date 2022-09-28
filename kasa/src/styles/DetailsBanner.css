@@ -6,6 +6,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 /* Picture used for the banner */
@@ -28,8 +29,21 @@ div.navPicturesArrows{
     border-radius: 25px;
 }
 
-/* Arrow icons */
+/* Arrow icons blocks */
 .nextArrow, .previousArrow{
     --fa-animation-duration: 2s;
+}
+
+/* Arrow icons */
+.bannerArrow{
+    cursor: pointer;
+}
+
+.picturesCounter{
+    color: var(--white-color);
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    justify-content: center;
 }
 
