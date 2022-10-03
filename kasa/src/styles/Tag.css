@@ -8,3 +8,17 @@
     font-size: 14px;
     line-height: 142.6%;
 }
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .tag{
+        font-size: 12px;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .tag{
+        font-size: 10px;
+    }
+}

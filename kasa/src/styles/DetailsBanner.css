@@ -15,6 +15,7 @@
     height: 100%;
     border-radius: 25px;
     object-fit: cover;
+    min-height: 255px;
 }
 
 /* Block containing both arrow icons to navigate between pictures */
@@ -29,16 +30,13 @@ div.navPicturesArrows{
     border-radius: 25px;
 }
 
-/* Arrow icons blocks */
-.nextArrow, .previousArrow{
-    --fa-animation-duration: 2s;
-}
-
 /* Arrow icons */
 .bannerArrow{
     cursor: pointer;
+    --fa-animation-duration: 2s;
 }
 
+/* Number of pictures in the gallery and position of current picture */
 .picturesCounter{
     color: var(--white-color);
     position: absolute;
@@ -47,3 +45,30 @@ div.navPicturesArrows{
     justify-content: center;
 }
 
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .detailsBanner{
+        height: 335px;
+        border-radius: 20px;
+    }
+
+    .bannerArrow{
+        font-size: 4em;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .detailsBanner{
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .bannerArrow{
+        font-size: 2.5em;
+    }
+
+    .picturesCounter{
+        font-size: 14px;
+    }
+}

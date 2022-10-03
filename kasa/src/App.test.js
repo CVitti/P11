@@ -1,9 +1,9 @@
 // @ts-nocheck
 import { render, screen } from '@testing-library/react';
-import App from './pages/App';
+import AppRouter from './pages/AppRouter';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<AppRouter />);
   const linkElement = screen.getByText(/Accueil/i);
   expect(linkElement).toBeInTheDocument();
 });

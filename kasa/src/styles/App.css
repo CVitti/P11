@@ -1,6 +1,7 @@
 /* Body style */
 body{
   max-width: 1440px;
+  min-width: 375px;
   margin: auto;
   padding: 0px;
   font-family: 'Montserrat';
@@ -11,5 +12,24 @@ body{
 
 /* Root div style */
 #root{
-  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.marginContent{
+  padding: 0px 20px;
+}
+
+/* Mid desktop and higher res */
+@media screen and (min-width: 1301px){
+  .marginContent{
+    padding: 0px 100px;
+  }
+}
+
+/* Low desktop only */
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+  .marginContent{
+    padding: 0px 50px;
+  }
 }

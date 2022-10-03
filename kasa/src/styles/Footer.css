@@ -16,13 +16,10 @@ footer p{
     margin: 0;
 }
 
-/* Change the color from the footer logo */
-footer svg path{
-    fill: var(--white-color);
-}
-
-/* Change SVG logo size */
-footer svg{
-    height: 40px;
-    width: 120px;
+/* Mobile only */
+@media screen and (max-width: 768px){
+    footer{
+        font-size: 14px;
+        row-gap: 15px;
+    }
 }

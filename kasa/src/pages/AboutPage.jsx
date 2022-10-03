@@ -21,7 +21,7 @@ function AboutPage() {
 
   return (
     <main>
-      <Banner bannerPicture={bannerFile} />
+      <Banner bannerPicture={bannerFile} page="About" />
       <section className="flex flex--row flex--wrap aboutSection">
         <ExpandableBlock title="Fiabilité" paragraph={reliabilityText} />
         <ExpandableBlock title="Respect" paragraph={respectText} />

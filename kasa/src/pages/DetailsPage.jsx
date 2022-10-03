@@ -77,7 +77,7 @@ function DetailsPage(){
             <div className='flex flex--column detailsContainer'>
                 <h1 className='logementTitle'>{currentLogement.title}</h1>
                 <h2 className='logementLocation'>{city}, {region}</h2>
-                <div className='tagsContainer flex flex--row'>
+                <div className='tagsContainer flex flex--row flex--wrap'>
                     {currentLogement.tags.map((tag) => (
                         <Tag title={tag} key={tag} />
                     ))}
@@ -92,7 +92,7 @@ function DetailsPage(){
                 </div>
                 <div className='flex flex--row ratingContainer'>
                     {starsList.map((type, index) => (
-                        <FontAwesomeIcon icon={faStar} className={type} key={index} size="xl"/>
+                        <FontAwesomeIcon icon={faStar} className={type} key={"star" + (index + 1)} size="xl"/>
                     ))}
                 </div>
             </div>

@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 function LogementCard({logementData}) {
   const logementURL = "/DetailsLogements/" + logementData.id;
   return (
-    <Link to={logementURL}>
+    <Link to={logementURL} className='logementCardLink'>
       <article className="logementCard">
         <img src={logementData.cover} alt={logementData.title} className="logementCardImg"></img>
         <div className="logementCardBground">

@@ -34,7 +34,7 @@ function ExpandableBlock({title, paragraph, list, isHalfWidth}) {
   return (
     // If the isHalfWidth prop is defined then add class to set width to half
     <div className={`flex flex--wrap flex--column expandableBlock ${isHalfWidth ? "expandableBlockHalfWidth" : "expandableBlockFullWidth"}`}>
-
+      
       {/* Header of the expandable block, displays/hides content on click */}
       <div className='flex expandableBlockHeader' onClick={(e) => handleContentExpansion(e)}>
           {title}
@@ -55,7 +55,6 @@ function ExpandableBlock({title, paragraph, list, isHalfWidth}) {
           </ul>
         }
       </div>
-
     </div>
   );
 }

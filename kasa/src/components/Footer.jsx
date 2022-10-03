@@ -13,7 +13,7 @@ import Logo from './Logo';
 function Footer() {
   return (
     <footer className="flex flex--column">
-      <Logo />
+      <Logo position="Footer"/>
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );

@@ -1,10 +1,15 @@
 /* Logement Card */
 .logementCard{
-    width: 340px;
+    width: 100%;
     height: 340px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+}
+
+/* Logement Card link */
+.logementCardLink{
+    width: 30%;
 }
 
 /* Logement Card style when hovering */
@@ -39,4 +44,29 @@
     bottom: 20px;
     left: 0px;
     padding: 0px 20px;
+}
+  
+/* Low desktop only */
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+    .logementCardLink{
+        width: 47.5%;
+    }
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .logementCardLink{
+        width: 48%;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .logementCardLink{
+        width: 100%;
+    }
+
+    .logementCard{
+        height: 255px;
+    }  
 }

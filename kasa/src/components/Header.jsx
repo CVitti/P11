@@ -20,7 +20,7 @@ let classicClassName = "navLink";
 function Header() {
   return (
     <header className="flex flex--row">
-      <Logo />
+      <Logo position="Header"/>
       <nav className="flex flex--row">
         <NavLink 
           to="../"

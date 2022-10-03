@@ -34,7 +34,7 @@ function MainPage() {
 
   return (
     <main>
-      <Banner bannerPicture={bannerFile} slogan="Chez vous, partout et ailleurs"/>
+      <Banner bannerPicture={bannerFile} slogan="Chez vous, partout et ailleurs" page="Main"/>
       <section className="flex mainSection flex--row flex--wrap">
       {logementsList.map((logement) => (
         <LogementCard logementData={logement} key={logement.id} />

@@ -65,10 +65,10 @@ function DetailsBanner({bannerPictures}) {
       {nbPictures > 1 ? 
         <React.Fragment>
           <div className='flex flex--row navPicturesArrows'>
-            <div className='flex previousArrow'>
+            <div className='flex'>
                 <FontAwesomeIcon icon={faAngleDown} size="6x" rotation={90} fade inverse className='bannerArrow' onClick={(e) =>{changePicture(e, "previous")}}/>
             </div>
-            <div className='flex nextArrow'>
+            <div className='flex'>
                 <FontAwesomeIcon icon={faAngleDown} size="6x" rotation={270} fade inverse className='bannerArrow' onClick={(e) =>{changePicture(e, "next")}}/>
             </div>
           </div>

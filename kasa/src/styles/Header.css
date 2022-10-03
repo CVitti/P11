@@ -8,11 +8,9 @@ header{
 /* Nav menu in the header */
 nav{
     color: var(--main-text-color);
-    width: 20%;
-    font-size: 24px;
     line-height: 142.6%;
-    justify-content: space-between;
     align-items: center;
+    font-size: 24px;
 }
 
 /* Menu links style */
@@ -21,8 +19,45 @@ a.navLink{
     text-decoration: none;
 }
 
+/* Menu links on hover style */
+a.navLink:hover {
+    text-decoration: underline;
+}
+
 /* Interaction style with menu links */
 a.navLinkActive{
     color: var(--main-text-color);
     text-decoration: underline;
+}
+
+/* Mid desktop and higher res */
+@media screen and (min-width: 1301px){
+    nav{
+        column-gap: 60px;
+    }
+}
+  
+/* Low desktop only */
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+    nav{
+        column-gap: 40px;
+    }
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    nav{
+        column-gap: 20px;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    header{
+        margin-top: 20px;
+    }
+    nav{
+        font-size: 18px;
+        column-gap: 10px;
+    }
 }

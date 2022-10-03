@@ -1,13 +1,14 @@
 /* Section all the whole details page, between header and footer */
 .detailsSection{
-    margin: 20px 0px;
+    margin: 20px 0px 40px 0px;
     justify-content: space-between;
     row-gap: 20px;
+    column-gap: 5%;
 }
 
 /* Block containing Title + location + tags */
 .detailsContainer{
-    width: 80%;
+    width: 75%;
     row-gap: 10px;
 }
 
@@ -30,6 +31,7 @@
 /* Block containing the Logement tags */
 .tagsContainer{
     column-gap: 10px;
+    row-gap: 10px;
 }
 
 /* Block containint host name and picture, Logement rating */
@@ -84,4 +86,69 @@
 .expandableBlocksContainer{
     width: 100%;
     justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .logementTitle{
+        font-size: 26px;
+    }
+
+    .logementLocation{
+        font-size: 16px;
+    }
+
+    .filledStar, .emptyStar{
+        font-size: 1.3em;
+    }    
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .detailsSection{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .detailsContainer{
+        width: 100%;
+    }
+
+    .logementTitle{
+        font-size: 18px;
+    }
+
+    .logementLocation{
+        font-size: 14px;
+    }
+
+    .hostAndRatingContainer{
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hostPicture{
+        height: 48px;
+        width: 48px;
+    }
+
+    .hostContainer, .ratingContainer{
+        width: 50%;
+    }
+
+    .filledStar, .emptyStar{
+        font-size: 1em;
+    }    
+
+    .ratingContainer{
+        justify-content: flex-start;
+    }
+
+    .expandableBlocksContainer{
+        flex-direction: column;
+    }
 }

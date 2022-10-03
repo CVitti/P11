@@ -1,0 +1,24 @@
+/* Change SVG logo size for the header */
+svg.logoHeader{
+    height: 68px;
+    width: 210px;
+}
+
+/* Change the color from the footer logo */
+svg.logoFooter path{
+    fill: var(--white-color);
+}
+
+/* Change SVG logo size for the footer */
+svg.logoFooter{
+    height: 40px;
+    width: 120px;
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    svg.logoHeader{
+        height: 47px;
+        width: 145px;
+    }
+}

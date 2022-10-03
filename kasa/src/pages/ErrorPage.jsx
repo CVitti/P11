@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
  */
 function ErrorPage() {    
     return (
-        <main className="mainError">
+        <main className="flex flex--column mainError">
             <p className='nbError'>404</p>
             <p>Oups! La page que vous demandez n'existe pas</p>
             <Link to="/" className="indexLink">Retourner sur la page d'accueil</Link>      

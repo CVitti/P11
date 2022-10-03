@@ -1,17 +1,29 @@
 /* Banner of the index page */
 .mainBanner{
     width: 100%;
+    min-height: 110px;
     border-radius: 25px;
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 /* Image used for the banner */
 .mainBanner img{
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Banner image from main page */
+.imgBannerMain{
+    min-height: 110px;
+}
+
+/* Banner image fron About page */
+.imgBannerAbout{
+    min-height: 220px;
 }
 
 /* Gradient background displayed over the image */
@@ -27,9 +39,38 @@
 
 /* Slogan displayed over the gradient */
 .bannerSlogan{
+    height: 100%;
     position: absolute;
+    align-items: center;
     color: var(--white-color);
     font-size: 48px;
     opacity: 1;
     z-index: 2;
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .mainBanner{
+        border-radius: 15px;
+        margin-top: 30px;
+    }
+
+    .bannerSlogan{
+        font-size: 36px;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .mainBanner{
+        border-radius: 10px;
+        margin-top: 15px;
+        justify-content: flex-start;
+    }
+
+    .bannerSlogan{
+        font-size: 24px;
+        padding-left: 15px;
+        max-width: 65%;
+    }
 }

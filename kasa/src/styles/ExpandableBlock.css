@@ -60,6 +60,7 @@
     border-radius: 5px;
 }
 
+/* Paragraph of the expandable block */
 .expandedContent p{
     margin: 0;
 }
@@ -70,4 +71,22 @@
     margin: 0;
     padding: 0px;
     row-gap: 5px;
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .expandableBlockFullWidth{
+        width: 100%;
+        font-size: 20px;
+        line-height: 142.6%;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .expandableBlockFullWidth, .expandableBlockHalfWidth{
+        width: 100%;
+        font-size: 16px;
+        line-height: 142.6%;
+    }
 }

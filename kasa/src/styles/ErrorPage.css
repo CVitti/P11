@@ -1,13 +1,17 @@
 /* Main section that contains error messages */
 .mainError{
-    text-align: center;
+    margin: 120px 0px 100px 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Error text style */
 .mainError p{
     font-size: 36px;
-    margin: 0;
     color: var(--main-text-color);
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 /* Higher font size for the error number */
@@ -18,8 +22,29 @@ p.nbError{
 
 /* Link redirecting to the index below the error message */
 a.indexLink{
-    display: block;
     color: var(--main-text-color);
     text-decoration: underline;
-    margin: 140px 0px;
+    margin-top: 140px;    
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+    .mainError p{
+        font-size: 24px;
+    }
+
+    p.nbError{
+        font-size: 192px;
+    }
+}
+
+/* Mobile only */
+@media screen and (max-width: 768px){
+    .mainError p{
+        font-size: 18px;
+    }
+
+    p.nbError{
+        font-size: 96px;
+    }
 }
