@@ -18,7 +18,7 @@ svg.logoFooter{
 /* Mobile only */
 @media screen and (max-width: 768px){
     svg.logoHeader{
-        height: 47px;
-        width: 145px;
+        height: 40px;
+        width: 130px;
     }
 }

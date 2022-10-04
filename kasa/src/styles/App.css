@@ -1,7 +1,7 @@
 /* Body style */
 body{
   max-width: 1440px;
-  min-width: 375px;
+  min-width: 320px;
   margin: auto;
   padding: 0px;
   font-family: 'Montserrat';
@@ -16,10 +16,6 @@ body{
   flex-direction: column;
 }
 
-.marginContent{
-  padding: 0px 20px;
-}
-
 /* Mid desktop and higher res */
 @media screen and (min-width: 1301px){
   .marginContent{
@@ -31,5 +27,19 @@ body{
 @media screen and (min-width: 1000px) and (max-width: 1300px){
   .marginContent{
     padding: 0px 50px;
+  }
+}
+
+/* Tablet only */
+@media screen and (min-width: 769px) and (max-width: 999px){
+  .marginContent{
+    padding: 0px 20px;
+  }
+}
+
+/* Low mobile only */
+@media screen and (max-width: 768px){
+  .marginContent{
+    padding: 0px 10px;
   }
 }
